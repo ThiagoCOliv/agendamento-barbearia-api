@@ -34,7 +34,7 @@ public class ClientEntity
     @Column(nullable = false, length = 150, unique = true)
     private String email;
 
-    @Column(nullable = false, length = 11, unique = true)
+    @Column(nullable = false, columnDefinition = "CHAR(11)", unique = true)
     private String phone;
 
     @ToString.Exclude
